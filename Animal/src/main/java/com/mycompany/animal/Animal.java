@@ -39,7 +39,25 @@ public class Animal {
         Gato gato = new Gato();
         
         System.out.println("Digite o nome do gato: ");
-        nomeGato
+        gato.nome = ler.nextLine();
+        
+        System.out.println("Digite a idade do gato: ");
+        gato.idade = ler.nextInt();
+        ler.nextLine();
+        
+        System.out.println("Digite a nome do cachorro: ");
+        cachorro.nome = ler.nextLine();
+        
+        System.out.println("Digite a idade do cachorro: ");
+        cachorro.idade = ler.nextInt();
+        
+        System.out.println("\nnome: "+gato.nome);
+        System.out.println("Idade: "+gato.idade);
+        gato.fazerSom();
+        
+        System.out.println("nome: "+cachorro.nome);
+        System.out.println("Idade: "+cachorro.idade);
+        cachorro.fazerSom();                      
         
     }
 }
